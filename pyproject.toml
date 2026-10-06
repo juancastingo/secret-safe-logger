@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "secret-safe-logger"
+version = "0.1.0"
+description = "High-performance Python logging utility that automatically detects and redacts credentials, JWTs, API keys, and sensitive data."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Juan Castiñeira", email = "juancastingo@gmail.com" }
+]
+keywords = [
+    "logging",
+    "security",
+    "redaction",
+    "secrets",
+    "jwt",
+    "sanitize",
+    "compliance"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Logging",
+    "Topic :: Security",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/juancastingo/secret-safe-logger"
+Repository = "https://github.com/juancastingo/secret-safe-logger"
+Issues = "https://github.com/juancastingo/secret-safe-logger/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
